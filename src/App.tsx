@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Home from './container/Home'
+import Home from './modules/Home/index';
 import {
   Switch,
   Route
