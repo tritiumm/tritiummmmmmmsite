@@ -1,6 +1,5 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './App.styl';
 import Home from './modules/Home/index';
 import {
   Switch,

@@ -1,0 +1,57 @@
+
+.dialog-container {
+  .dialog-mask {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 10;
+    background-color: rgba(0,0,0,.6);
+  }
+  .bot-dialog {
+    width: 60vw;
+    padding: 20px 40px;
+    height: 100px;
+    position: fixed;
+    z-index: 99;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 2px solid #000000;
+    background-color: #fff;
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+    cursor: pointer ;
+    .context-text {
+      .name {
+        margin-bottom: 10px;
+      }
+    }
+    .close-text {
+      position: absolute;
+      right: 15px;
+      bottom: 15px;
+    }  
+    .ques-list {
+      position: absolute;
+      bottom: 100%;
+      width: 100%;
+      left: 0;
+      text-align: center;
+      margin-bottom: 20px;
+      >li:not(:first-child) {
+        margin-top: 10px;
+      }
+      >li {
+        width: 50%;
+        display: inline-block;
+        background-color: #fff;
+        border: 2px solid #000;
+        padding: 4px 0;
+        cursor: pointer;
+      }
+    }
+}
+}

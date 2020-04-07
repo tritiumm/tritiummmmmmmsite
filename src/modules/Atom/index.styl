@@ -1,0 +1,71 @@
+#home {
+  perspective: 1200px;
+
+  .atom-universe {
+    width: 900px;
+    position: relative;
+    margin: auto;
+    padding-right: 100px;
+    .electron {
+      position: absolute;
+      top: -5px;
+      left: -5px;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: #000;
+    }
+    .a-bot {
+      width: 100px;
+      position: absolute; 
+      top: 30%;
+      left: 45%;
+      >img {
+        width: 100px;
+      }
+      .eyes {
+        position: absolute;
+        top: 25px;  
+        .eye {
+          position: relative;
+          display: inline-block;
+          border-radius: 50%;
+          width: 30px;
+          height: 30px;
+          background: transparent;
+          margin: 6px;
+        }
+
+        .eye::after {
+          position: absolute;
+          bottom: 17px;
+          right: 10px;
+          width: 24px;
+          height: 24px;
+          background-color: #313131;
+          border-radius: 50%;
+          content: '';
+        }
+      }
+      // .eyes {          
+      //   position: absolute;
+      //   top: 50px;
+      //   .eye {
+      //     position: absolute;
+      //     width: 20px;
+      //     height: 20px;
+      //     border-radius: 50%;
+      //     background: #000;
+      //   }
+      //   .left-eye {
+      //     left: 30px;  
+      //   }
+      //   .right-eye {
+      //     left: 66px;  
+      //   }
+      // }
+    }
+    
+  }
+ 
+}
