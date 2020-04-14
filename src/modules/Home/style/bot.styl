@@ -17,28 +17,30 @@
       -o-animation: shake 110ms linear infinite;  
     }
     .eyes {
-    position: absolute;
-    top: 25px;  
+      position: absolute;
+      top: 25px;
+      left: 20px;  
       .eye {
         position: relative;
         display: inline-block;
         border-radius: 50%;
-        width: 30px;
-        height: 30px;
-        background: transparent;
-        margin: 6px;
-      }
-
-      .eye::after {
-        position: absolute;
-        bottom: 17px;
-        right: 10px;
         width: 24px;
         height: 24px;
-        background-color: #313131;
-        border-radius: 50%;
-        content: '';
+        background: black;
+        margin: 6px;
+        transform-origin: center left;
       }
+
+      // .eye::after {
+      //   position: absolute;
+      //   bottom: 17px;
+      //   right: 10px;
+      //   width: 24px;
+      //   height: 24px;
+      //   background-color: #313131;
+      //   border-radius: 50%;
+      //   content: '';
+      // }
     
     }
   }
@@ -71,6 +73,13 @@
       }
       &:hover .opacity-control {
         opacity: 1;  
+      }
+      img {
+        width: 35px;
+        height: 35px;
+        position: absolute;
+        top: 4px;
+        left: 4px;
       }
       >a {
         width: 44px;
