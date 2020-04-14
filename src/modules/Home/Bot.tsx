@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import botImg from './assets/abot-body.png';
 import DialogGame from '@/modules/DialogGame';
+import AboutMe from '@/modules/Aboutme';
 import './style/bot.styl';
 // import { on } from 'cluster';
 import Enums from '@/com/enum';
@@ -90,7 +91,7 @@ const Bot = React.forwardRef((props:{
       bottom: DEFAULT_RIGHT
     },
     clickHandler: () => {
-      window.open('https://www.zcool.com.cn/u/642528');
+      window.open('https://github.com/tritiumm');
     }
   },{
     index: 5,
@@ -114,6 +115,9 @@ const Bot = React.forwardRef((props:{
   }
   function dialogCloseCb() {
     setIsDialogVisible(false);
+  }
+  function aboutCloseCb() {
+    setIsAboutMeVisible(false);
   }
   // 获取几个交互ui的位置
   function getPosition(count: number, r:number, ref: any): Array<number[]> {
@@ -288,6 +292,7 @@ const Bot = React.forwardRef((props:{
         </ul>
       </div>
       { isDialogVisible && <DialogGame closeCb={dialogCloseCb} />}
+      { isAboutMeVisible && <AboutMe closeCb={aboutCloseCb} />}
     </>
   )
 })

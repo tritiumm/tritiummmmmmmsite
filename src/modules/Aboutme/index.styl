@@ -1,0 +1,85 @@
+.about-me-container {
+  width: 600px;
+  padding: 40px 20px;
+  background-color: #fff;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  border: 2px solid #000000;
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  .close {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    cursor: pointer;
+  }
+  .bot-bounce {
+    animation: bot-bounce 1s infinite;
+    height: 200px;
+    position: absolute;
+    width: 200px;
+    z-index: 2;
+    background-color: #000;
+    right: -120px;
+    .bot-eyes {
+      position: absolute;
+      top: 40%;
+      left: 30%;
+      .eye {
+        display: inline-block;
+        animation: eye-bounce 1s infinite;
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        z-index: 3;
+        background-color: #fff;
+        margin-right: 20px;
+      }
+    }
+      
+    @keyframes bot-bounce {
+      0% {
+        bottom: 10px;
+        clip-path: ellipse(25% 26% at 50% 50%);
+      }
+      50% {
+        bottom: -70px;      
+      }
+      70% {
+        bottom: -70px;
+        clip-path: ellipse(31% 18% at 50% 50%);
+      }
+      100% {
+        bottom: 10px;
+        clip-path: ellipse(25% 26% at 50% 50%);
+      }
+    }
+    @keyframes eye-bounce {
+      0% {
+        bottom: 10px;
+      }
+      50% {
+        bottom: -70px;
+      }
+      70% {
+        bottom: -70px;
+      }
+      100% {
+        bottom: 10px;
+      }
+    }
+
+  }
+  .about-me {
+    .content {
+      >p {
+        font-size: 20px;
+        &:not(:first-child) {
+          margin-top: 4px;
+        }
+      }
+    }  
+  }
+}
